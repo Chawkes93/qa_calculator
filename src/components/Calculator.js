@@ -43,7 +43,7 @@ export class Calculator extends Component {
         <div className='calculator__buttons-wrapper'>
           <section className='calculator__left-buttons'>
             <CalculatorButton
-              backgroundColor='#d6d6d6'
+              backgroundColor='##7c8bf2'
               callback={clear}
               value='AC'
             />
@@ -62,37 +62,31 @@ export class Calculator extends Component {
           </section>
           <section className='calculator__operator-buttons'>
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#8A2BE2'
               callback={() => setOperator(operators.DIVIDE)}
               color='#ffffff'
               value='÷'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#8A2BE2'
               callback={() => setOperator(operators.MULTIPLY)}
               color='#ffffff'
-              value='X'
+              value='×'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#8A2BE2'
               callback={() => setOperator(operators.SUBTRACT)}
               color='#ffffff'
               value='-'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
-              callback={() => setOperator(operators.SUBTRACT)}
+              backgroundColor='#8A2BE2'
+              callback={() => setOperator(operators.ADD)}
               color='#ffffff'
               value='+'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
-              callback={evaluate}
-              color='#ffffff'
-              value='='
-            />
-            <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#8A2BE2'
               callback={evaluate}
               color='#ffffff'
               value='='
